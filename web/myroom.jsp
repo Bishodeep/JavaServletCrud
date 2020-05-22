@@ -18,6 +18,9 @@
 				<div class="list-part">
 					<h4 class="card-title">Your Room</h4>
 				</div>
+                            <div class="alert alert-warning" role="alert">
+                                <p>${message}</p>
+                              </div>
 				<div class="col-sm-12">
 						<div class="card">
 							<div class="card-body">

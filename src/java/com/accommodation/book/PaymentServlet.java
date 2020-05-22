@@ -10,6 +10,7 @@ import java.io.IOException;
 import java.io.PrintWriter;
 import java.util.logging.Level;
 import java.util.logging.Logger;
+import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -32,9 +33,13 @@ public class PaymentServlet extends HttpServlet {
         try {
             boolean payment= RoomDao.changePaymentStaus(id);
             if(payment){
-                response.sendRedirect("welcome");
+                RequestDispatcher resDispatcher=request.getRequestDispatcher("welcome");
+			 request.setAttribute("message", "Payment successfull !!");
+                         resDispatcher.forward(request, response);
             }else{
-                response.sendRedirect("myroom");
+                 RequestDispatcher resDispatcher=request.getRequestDispatcher("welcome");
+			 request.setAttribute("message", "Payment unsuccessful !!");
+                         resDispatcher.forward(request, response);
             }
         } catch (Exception ex) {
             Logger.getLogger(PaymentServlet.class.getName()).log(Level.SEVERE, null, ex);

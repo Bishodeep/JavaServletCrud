@@ -20,7 +20,10 @@
 				<div class="list-part">
 					<h4 class="card-title">Accommodation Available</h4>
 				</div>
-				<p>${message}</p>
+                            <div class="alert alert-warning" role="alert">
+  <p>${message}</p>
+</div>
+				
 				<c:forEach var="room" items="${listRoom}">
 					<div class="col-sm-12">
 						<div class="card">
