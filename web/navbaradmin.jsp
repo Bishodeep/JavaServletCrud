@@ -35,10 +35,10 @@ padding-top: 5px;
     <a class="navbar-brand" href="#">Welcome <%=user %> </a>
     <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
       <li class="nav-item active">
-        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+        <a class="nav-link" href="welcomeadmin">Home <span class="sr-only">(current)</span></a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="addaccommodations">Accommodations</a>
+        <a class="nav-link" href="welcomeadmin">Accommodations</a>
       </li>
     </ul>
    <form class="form-inline my-2 my-lg-0"  action="logout"  method="post">
