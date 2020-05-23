@@ -9,6 +9,11 @@
             30
         </session-timeout>
     </session-config>
+    <listener>
+   <listener-class>
+ com.accomodation.seed.SeedServlet
+   </listener-class>
+</listener>
     <servlet>
   <servlet-name>login</servlet-name>
   <servlet-class>com.accomodation.login.LoginServlet</servlet-class>
