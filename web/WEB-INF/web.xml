@@ -153,4 +153,64 @@
   <servlet-name>payment</servlet-name>
   <url-pattern>/payment</url-pattern>
   </servlet-mapping>
+  
+   <servlet>
+  <servlet-name>accommodationtypeparser</servlet-name>
+  <servlet-class>com.accommodation.dataparser.AccommodationTypeParserServlet</servlet-class>
+  </servlet>
+  
+   <servlet-mapping>
+  <servlet-name>accommodationtypeparser</servlet-name>
+  <url-pattern>/accommodationtypeparser</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  <servlet-name>accommodationparser</servlet-name>
+  <servlet-class>com.accommodation.dataparser.AccommodationParserServlet</servlet-class>
+  </servlet>
+  
+   <servlet-mapping>
+  <servlet-name>accommodationparser</servlet-name>
+  <url-pattern>/accommodationparser</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  <servlet-name>accommodationassignparser</servlet-name>
+  <servlet-class>com.accommodation.dataparser.AccommodationAssignParserServlet</servlet-class>
+  </servlet>
+  
+   <servlet-mapping>
+  <servlet-name>accommodationassignparser</servlet-name>
+  <url-pattern>/accommodationassignparser</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  <servlet-name>studentroomparser</servlet-name>
+  <servlet-class>com.accommodation.dataparser.StudentRoomParserServlet</servlet-class>
+  </servlet>
+  
+   <servlet-mapping>
+  <servlet-name>studentroomparser</servlet-name>
+  <url-pattern>/studentroomparser</url-pattern>
+  </servlet-mapping>
+  
+   <servlet>
+  <servlet-name>accommodationeditparser</servlet-name>
+  <servlet-class>com.accommodation.dataparser.AccommodationEditParserServlet</servlet-class>
+  </servlet>
+  
+   <servlet-mapping>
+  <servlet-name>accommodationeditparser</servlet-name>
+  <url-pattern>/accommodationeditparser</url-pattern>
+  </servlet-mapping>
+  
+   <servlet>
+  <servlet-name>accommodationtypeeditparser</servlet-name>
+  <servlet-class>com.accommodation.dataparser.AccommodationTypeEditParserServlet</servlet-class>
+  </servlet>
+  
+   <servlet-mapping>
+  <servlet-name>accommodationtypeeditparser</servlet-name>
+  <url-pattern>/accommodationtypeeditparser</url-pattern>
+  </servlet-mapping>
 </web-app>
